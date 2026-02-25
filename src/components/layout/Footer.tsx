@@ -6,8 +6,8 @@ const footerLinks = {
         { name: "Home", href: "/" },
         { name: "About Us", href: "/about" },
         { name: "Solar Modules", href: "/products" },
-        { name: "Solar Power Plants", href: "/solar-plants" },
-        { name: "Contact Us", href: "/contact" },
+        { name: "Solar Power Plants", href: "/enquiry" },
+        { name: "Contact Us", href: "/enquiry" },
     ],
     legal: [
         { name: "Privacy Policy", href: "/policy" },

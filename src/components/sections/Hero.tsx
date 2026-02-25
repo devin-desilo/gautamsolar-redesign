@@ -69,7 +69,7 @@ export default function Hero() {
                             View Modules <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                         </Link>
                         <Link
-                            href="/contact"
+                            href="/enquiry"
                             className="flex items-center justify-center gap-2 bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-md font-bold text-lg hover:bg-white/20 transition-all"
                         >
                             Enquire Now <ChevronRight size={20} />
