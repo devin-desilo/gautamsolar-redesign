@@ -46,9 +46,34 @@ export default function StatsBar() {
         >
             <div className="max-w-7xl mx-auto px-6">
                 {/* Trust Badges */}
-                <div className="flex justify-center flex-wrap gap-8 mb-12 grayscale opacity-60">
-                    <img src="https://gautamsolar.com/Grade_A.webp" alt="Grade A" className="h-14 w-auto" />
-                    <img src="https://gautamsolar.com/Global_Top_30.webp" alt="Global Top 30" className="h-14 w-auto" />
+                <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 mb-20">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6 }}
+                        className="relative group p-4 bg-white rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.08)] border border-gray-50 flex items-center justify-center overflow-hidden"
+                    >
+                        <div className="absolute inset-0 bg-gradient-to-br from-solar-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                        <img
+                            src="https://gautamsolar.com/Grade_A.webp"
+                            alt="Grade A"
+                            className="h-[280px] md:h-[400px] w-auto object-contain relative z-10 transition-transform duration-700 group-hover:scale-105"
+                        />
+                    </motion.div>
+
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.1 }}
+                        className="relative group p-4 bg-white rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.08)] border border-gray-50 flex items-center justify-center overflow-hidden"
+                    >
+                        <div className="absolute inset-0 bg-gradient-to-br from-solar-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                        <img
+                            src="https://gautamsolar.com/Global_Top_30.webp"
+                            alt="Global Top 30"
+                            className="h-[280px] md:h-[400px] w-auto object-contain relative z-10 transition-transform duration-700 group-hover:scale-105"
+                        />
+                    </motion.div>
                 </div>
 
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 text-center">
